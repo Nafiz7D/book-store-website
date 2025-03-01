@@ -1,14 +1,18 @@
-import React from 'react'
-import Navbar from './components/Navbar/Navbar';
+import React from "react";
+import Navbar from "./components/Navbar/Navbar";
+import Hero from "./components/Hero/Hero";
+import BestBooks from "./components/BestBooks/BestBooks";
 
 const App = () => {
   return (
     <>
-    <div>
-      <Navbar></Navbar>
-    </div>
+      <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
+        <Navbar></Navbar>
+        <Hero></Hero>
+        <BestBooks></BestBooks>
+      </div>
     </>
-  )
-}
+  );
+};
 
 export default App;
