@@ -5,6 +5,7 @@ import BestBooks from "./components/BestBooks/BestBooks";
 import Banner from "./components/Banner/Banner";
 import AppStoreBanner from "./components/AppStoreBanner/AppStoreBanner";
 import AllBooks from "./components/AllBooks/AllBooks";
+import Testimonial from "./components/Testimonial/Testimonial";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Banner></Banner>
         <AppStoreBanner></AppStoreBanner>
         <AllBooks></AllBooks>
+        <Testimonial></Testimonial>
       </div>
     </>
   );
