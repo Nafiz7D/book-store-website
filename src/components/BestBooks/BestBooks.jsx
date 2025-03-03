@@ -28,18 +28,23 @@ const BookData = [
   },
 ];
 
-const BestBooks = () => {
+const BestBooks = ({ handleOrderPopup }) => {
   return (
     <>
       <div className="py-10">
         <div className="container">
           {/* Header section */}
           <div className="text-center mb-20 max-w-[400px] mx-auto">
-            <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary ">
+            <p
+              data-aos="zoom-in"
+              className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary "
+            >
               Trending Books
             </p>
-            <h1 className="text-3xl font-bold">Best Books</h1>
-            <p className="text-xs text-gray-400">
+            <h1 data-aos="zoom-out" className="text-3xl font-bold">
+              Best Books
+            </h1>
+            <p data-aos="zoom-in" className="text-xs text-gray-400">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit, Culpa
               iiure, corpois {""}
             </p>
@@ -47,7 +52,10 @@ const BestBooks = () => {
           {/* card section */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-5 place-items-center">
             {BookData.map((book) => (
-              <div className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-primary dark:hover:bg-primary hover:text-white relative shadow-xl duration-high group max-w-[300px]:">
+              <div
+                data-aos="zoom-in"
+                className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-primary dark:hover:bg-primary hover:text-white relative shadow-xl duration-high group max-w-[300px]:"
+              >
                 <div className="h-[100px]">
                   <img
                     className="max-w-[100px] rounded-sm block mx-auto transform -translate-y-14 group-hover:scale-105 duration-300 shadow-md"
@@ -66,7 +74,10 @@ const BestBooks = () => {
                   <p className="text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2">
                     {book.description}
                   </p>
-                  <button className="bg-primary to-secondary text-white px-4 py-2 rounded-full mt-4 hover:scale-105 duration-200 group-hover:bg-white group-hover:text-primary">
+                  <button
+                    onClick={handleOrderPopup}
+                    className="bg-primary to-secondary text-white px-4 py-2 rounded-full mt-4 hover:scale-105 duration-200 group-hover:bg-white group-hover:text-primary"
+                  >
                     Oder Now
                   </button>
                 </div>

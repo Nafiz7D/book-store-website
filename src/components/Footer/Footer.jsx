@@ -28,7 +28,9 @@ const FooterLinks = [
 ];
 const Footer = () => {
   return (
-    <div className="bg-gray-100 dark:bg-gray-950">
+    <div
+    data-aos="slide-up"
+    className="bg-gray-100 dark:bg-gray-950">
       <section className="container">
         <div className=" grid md:grid-cols-3 py-5">
           {/* company Details */}

@@ -79,6 +79,7 @@ const Hero = ({ handleOrderPopup }) => {
               <div>
                 <button
                   onClick={handleOrderPopup}
+                  data-aos="zoom-in"
                   className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full"
                 >
                   Order Now

@@ -48,7 +48,10 @@ const AllBooks = () => {
       <div className="mt-14 mb-12">
         <div className="container">
           {/* header */}
-          <div className="text-center mb-10 max-w-[600px] mx-auto">
+          <div
+            data-aos="slide-up"
+            className="text-center mb-10 max-w-[600px] mx-auto"
+          >
             <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
               Top Books for you
             </p>
@@ -60,7 +63,7 @@ const AllBooks = () => {
           </div>
 
           {/* Body section */}
-          <div>
+          <div data-aos="slide-up">
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center gap-5">
               {/* Card */}
               {booksData.map(({ id, img, title, rating, author }) => (

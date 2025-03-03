@@ -25,10 +25,16 @@ const AppStore = () => {
             data-aos-duration="300"
             className="space-y-6 max-w-xl mx-auto"
           >
-            <h1 className="text-2xl text-center sm:text-left sm:text-4xl font-semibold ">
+            <h1
+              data-aos="slide-up"
+              className="text-2xl text-center sm:text-left sm:text-4xl font-semibold "
+            >
               Read Books at Your Fingertips
             </h1>
-            <div className="flex flex-wrap justify-center items-center">
+            <div
+              data-aos="slide-up"
+              className="flex flex-wrap justify-center items-center"
+            >
               <a href="#">
                 <img
                   src={PlayStoreImg}
